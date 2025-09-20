@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Champion Compare</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Champion Compare</h1>
+    <p>Pick two champions and click Compare.</p>
+
+    <div class="row">
+      <div class="col">
+        <label for="champ1">Champion 1</label>
+        <select id="champ1"></select>
+      </div>
+
+      <div class="col">
+        <label for="champ2">Champion 2</label>
+        <select id="champ2"></select>
+      </div>
+    </div>
+
+    <button id="compareBtn">Compare</button>
+
+    <div id="result" role="status" aria-live="polite"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
