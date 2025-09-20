@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <title>Champion Compare</title>
+  <script>
+    // Run password check before showing content
+    document.addEventListener("DOMContentLoaded", function () {
+      const password = "letmein"; // <-- change this to your password
+      let entered = prompt("Enter the password:");
+
+      if (entered !== password) {
+        document.body.innerHTML = "<h2>Access Denied</h2>";
+      }
+    });
+  </script>
+</head>
+<body>
+  <h1>Champion Compare</h1>
+  <div id="compare-container">
+    <!-- Your compare game goes here -->
+  </div>
+</body>
+</html>
+
+<head>
   <meta charset="utf-8" />
   <title>Champion Compare</title>
   <link rel="stylesheet" href="style.css">
